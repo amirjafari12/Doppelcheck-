@@ -3,12 +3,12 @@ tracks = []
 track_M = open("Name der Datei", "r")
 
 
-def einfuegen_liste():  # packt die Datei erstmals in eine Liste
+def einfuegen_liste():  
     for i in track_M:
         tracks.append(i)
 
 
-def liste_doppelwert():  # prüft, ob ein Wert doppelt vorkommt
+def liste_doppelwert():  
     for i in tracks:
         if tracks.count(i) > 1:
             tracks.remove(i)
